@@ -32,7 +32,7 @@ module.exports.sitesettings = {
 
   google_plus_id: '+CosaNostra24',
 
-  google_analytics_ua: 'UA-',
+  google_analytics_ua: 'UA-50630795-1',
 
   hello_bar_id: '5a22a6b401deb2bb94e4327e86dc92a610438938'
 }
