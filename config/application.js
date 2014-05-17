@@ -1,8 +1,11 @@
 
 module.exports.sitesettings = {
+
   author: 'Hermes',
   website_title: 'Striation Nutrition',
   domain: 'striationnutrition.com',
+
+  logo_url: '/images/logo.jpeg',
   
   contact_email: 'first.last@gmail.com',
 
