@@ -7,8 +7,10 @@ module.exports.sitesettings = {
 
   logo_url: 'http://i.imgur.com/rS7mEzW.jpeg',
   
+  show_contact_email: true,
   contact_email: 'first.last@gmail.com',
 
+  show_phone_number: true,
   phone_number: '883-7226',
 
   base_page_title: 'Striation Nutrition',
