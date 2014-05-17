@@ -22,6 +22,11 @@ module.exports.sitesettings = {
       platform: 'twitter',
       link: 'http://twitter.com/hermes206',
       display_name: '@Hermes206'
+    },
+    {
+      platform: 'instagram',
+      link: 'http://instagram.com/hermes206',
+      display_name: 'Hermes206'
     }
   ],
 
