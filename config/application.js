@@ -10,6 +10,8 @@ module.exports.sitesettings = {
 
   base_page_title: 'Striation Nutrition - Straight Facts on Health and Fitness',
 
+  blog_tagline: 'Business, Code, and Problem Solving',
+
   twitter_username: 'hayksaakian',
 
   instagram_id: '',
