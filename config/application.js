@@ -17,7 +17,7 @@ module.exports.sitesettings = {
 
   blog_tagline: 'Straight Facts on Health and Fitness',
 
-  twitter_username: 'hayksaakian',
+  twitter_username: 'hermes206',
 
   instagram_id: '',
 
