@@ -18,7 +18,7 @@ module.exports = {
   },
   destroy: function(req, res) {
     console.log('destroying comment')
-    Comment.findOne(req.param('id'), function (err, comment) {
+    Comment.findOne(req.param('id')).populate('article').exec(function (err, comment) {
       if(err) return next(err);
       article_id = comment.article.id
       article_title = comment.article.clean_title
