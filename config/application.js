@@ -2,15 +2,15 @@
 module.exports.sitesettings = {
   author: 'Hermes',
   website_title: 'Striation Nutrition',
-  domain: 'hayksaakian.com',
+  domain: 'striationnutrition.com',
   
   contact_email: 'first.last@gmail.com',
 
   phone_number: '883-7226',
 
-  base_page_title: 'Striation Nutrition - Straight Facts on Health and Fitness',
+  base_page_title: 'Striation Nutrition',
 
-  blog_tagline: 'Business, Code, and Problem Solving',
+  blog_tagline: 'Straight Facts on Health and Fitness',
 
   twitter_username: 'hayksaakian',
 
@@ -18,7 +18,7 @@ module.exports.sitesettings = {
 
   google_plus_id: '+HaykSaakian',
 
-  google_analytics_ua: 'UA-50649528-1',
+  google_analytics_ua: 'UA-',
 
   hello_bar_id: '5a22a6b401deb2bb94e4327e86dc92a610438938'
 }
