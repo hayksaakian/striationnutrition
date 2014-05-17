@@ -17,9 +17,13 @@ module.exports.sitesettings = {
 
   blog_tagline: 'Straight Facts on Health and Fitness',
 
-  twitter_username: 'hermes206',
-
-  instagram_id: '',
+  social_sidebar: [
+    {
+      platform: 'twitter',
+      link: 'http://twitter.com/hermes206',
+      display_name: '@Hermes206'
+    }
+  ],
 
   google_plus_id: '+HaykSaakian',
 
