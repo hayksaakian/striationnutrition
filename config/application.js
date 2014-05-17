@@ -30,7 +30,7 @@ module.exports.sitesettings = {
     }
   ],
 
-  google_plus_id: '+HaykSaakian',
+  google_plus_id: '+CosaNostra24',
 
   google_analytics_ua: 'UA-',
 
