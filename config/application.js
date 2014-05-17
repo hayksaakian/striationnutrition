@@ -27,11 +27,6 @@ module.exports.sitesettings = {
       platform: 'instagram',
       link: 'http://instagram.com/hermes206',
       display_name: 'Hermes206'
-    },
-    {
-      platform: 'youtube',
-      link: 'https://www.youtube.com/user/CosaNostra24',
-      display_name: 'CosaNostra24'
     }
   ],
 
