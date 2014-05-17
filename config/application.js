@@ -1,14 +1,14 @@
 
 module.exports.sitesettings = {
-  author: 'Hayk Saakian',
-  website_title: 'Hayk Saakian',
+  author: 'Hermes',
+  website_title: 'Striation Nutrition',
   domain: 'hayksaakian.com',
   
   contact_email: 'first.last@gmail.com',
 
   phone_number: '883-7226',
 
-  base_page_title: 'Hayk Saakian - Entrepreneur and Software Developer',
+  base_page_title: 'Striation Nutrition - Straight Facts on Health and Fitness',
 
   twitter_username: 'hayksaakian',
 
