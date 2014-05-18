@@ -109,6 +109,7 @@ body {
   width: 100px;
 }
 
-.hellobar_logo{
-  display: none !important;
+/* hide hellobar logo */
+a#hellobar-logo, a#hellobar-logo:link, a#hellobar-logo:visited {
+  display:none !important;
 }

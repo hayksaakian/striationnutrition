@@ -34,5 +34,6 @@ module.exports.sitesettings = {
 
   google_analytics_ua: 'UA-50630795-1',
 
+  hello_bar_enabled: true,
   hello_bar_id: '0b0ca3a27370cf6e26de8db339777591f9a3f060'
 }
