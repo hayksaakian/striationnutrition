@@ -19,20 +19,45 @@ module.exports.sitesettings = {
 
   blog_tagline: 'Straight Facts on Health and Fitness',
 
-  social_sidebar: [
-    {
-      platform: 'twitter',
-      link: 'http://twitter.com/hermes206',
-      display_name: '@Hermes206'
-    },
-    {
-      platform: 'instagram',
-      link: 'http://instagram.com/hermes206',
-      display_name: 'Hermes206'
-    }
-  ],
+  // social_sidebar: [
+  //   {
+  //     platform: 'twitter',
+  //     link: 'http://twitter.com/hermes206',
+  //     display_name: '@Hermes206'
+  //   },
+  //   {
+  //     platform: 'instagram',
+  //     link: 'http://instagram.com/hermes206',
+  //     display_name: 'Hermes206'
+  //   }
+  // ],
 
+  // for google authorship
   google_plus_id: '+CosaNostra24',
+
+  // should be a list: "twitter,facebook,linkedin"
+  shown_social_networks: "twitter,instagram",
+
+  facebook_link: '',
+  facebook_display_name: '',
+
+  twitter_link: 'http://twitter.com/hermes206',
+  twitter_display_name: '@Hermes206',
+
+  linkedin_link:'',
+  linkedin_display_name:'',
+
+  pinterest_link:'',
+  pinterest_display_name:'',
+
+  googleplus_link:'',
+  googleplus_display_name:'',
+
+  tumblr_link:'',
+  tumblr_display_name:'',
+
+  instagram_link:'http://instagram.com/hermes206',
+  instagram_display_name:'Hermes206',
 
   google_analytics_ua: 'UA-50630795-1',
 
