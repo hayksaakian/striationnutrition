@@ -10,17 +10,64 @@ module.exports = {
 
 
 
+  // admin panel
+  panel: function (req, res, next) {
+    User.find({}).limit(1).exec(function(err, users) {
+      if (err) return next(err);
+      user = users[0]
+      res.view({user: user})
+    })    
+  },
+
+
+  // admin panel
+  panel_update: function (req, res, next) {
+    // step 0:
+    // save sails.config.sitesettings;
+    // to the database
+
+    // step 1:
+    // get current settings
+    Setting.find({}).limit(1).exec(function(err, settings_arr){
+      if(err) return next(err);
+      // there should always be at least one settings object
+      // before this request is ever made
+      // make sure it's created when sails is lifted
+      settings = settings_arr[0]
+
+      // step 2:
+      // merge in the user defined settings
+      all_params = req.params.all()
+      for(var key in all_params){
+        if (settings.hasOwnProperty(key)) {
+          settings[key] = req.param(key)
+        }
+      }
+      // console.log('about to save:')
+      // console.log(settings)
+      // persist the settings to storage
+      Setting.update({id: settings.id}, settings, function (err, settings_arr) {
+        if(err) return next(err);
+        // persist the settings to memory
+        // console.log(settings_arr)
+        sails.config.sitesettings = settings_arr[0];
+
+        res.redirect('/admin/panel')
+      })
+    })
+
+  },
+
 
   /**
    * `UserController.edit`
    */
 
+
   edit: function (req, res, next) {
     User.find({}).limit(1).exec(function(err, users) {
       if (err) return next(err);
-
       user = users[0]
-
       res.view({user: user})
     })
   },
