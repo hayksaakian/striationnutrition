@@ -4,7 +4,8 @@
       page = {
         title: '',
         body: '',
-        markup: 'html'
+        markup: 'html',
+        in_nav: true
       }
     }
   %>
@@ -13,14 +14,29 @@
     <!-- radio buttons for markdown or html -->
     <div class="radio-inline">
       <label>
-        <input type="radio" name="markup" id="optionsRadios1" value="markdown" <%= page.markup === 'markdown' ? "checked" : "" %>>
+        <input type="radio" name="markup" value="markdown" <%= page.markup === 'markdown' ? "checked" : "" %>>
         Markdown + HTML
       </label>
     </div>
     <div class="radio-inline">
       <label>
-        <input type="radio" name="markup" id="optionsRadios2" value="html" <%= page.markup === 'html' ? "checked" : "" %>>
+        <input type="radio" name="markup" value="html" <%= page.markup === 'html' ? "checked" : "" %>>
         Only HTML
+      </label>
+    </div>
+  </div>
+  <div class='form-group'>
+    <!-- radio buttons for markdown or html -->
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="in_nav" value="true" <%= page.in_nav ? 'checked' : '' %>>
+        Show in Navigation
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="in_nav" value="false" <%= page.in_nav ? '' : 'checked' %>>
+        Hide from Nav.
       </label>
     </div>
   </div>

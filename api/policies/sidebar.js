@@ -10,7 +10,13 @@
 module.exports = function(req, res, next) {
 
   Page.find().exec(function(err, pages){
-    res.locals.pages = pages
+    // something like this:
+    // {'where': {'in_nav':{'not':false}}}
+    // should work, but it doesn't
+    pages = pages.filter(function(page){
+      return page.in_nav !== false;
+    })
+    res.locals.nav_pages = pages
     return next()
   })
 };

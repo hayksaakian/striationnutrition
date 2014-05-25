@@ -38,6 +38,15 @@ module.exports = {
   show: function (req, res) {
     Article.findOne(req.param('id')).populate('comments')
     .then(function (article) {
+      // TODO figure out how to populate nested comments
+      // var comments = Comment.find({
+      //   'where':{
+      //     'article': article.id, 
+      //     // 'parent':null 
+      //   }
+      // }).populate('children').then(function (comments) {
+      //   return comments
+      // })
       return [article, article.comments]
     }).spread(function (article, comments) {
       res.view({article: article, comments: comments, page_title: article.title});
